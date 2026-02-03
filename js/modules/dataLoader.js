@@ -224,10 +224,7 @@ export function applyFilter(filterValue) {
         clickedButton.classList.add('active');
         
         // Filtrar datos
-        let filteredData = allData[activeTab] || [];
-        filteredData = filteredData.filter(item => item.descripcion === filterValue);
-        
-        // Mostrar datos filtrados
+        const filteredData = (allData[activeTab] || []).filter(item => item.descripcion === filterValue);
         displayTable(filteredData, container, activeTab);
     } else {
         // Si estaba activo, deseleccionar y ocultar tabla

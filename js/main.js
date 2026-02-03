@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             switchTab(tabName);
         });
     });
-    
+
     // Event listeners para los filtros
     document.querySelectorAll('.filter-button').forEach(button => {
         button.addEventListener('click', function() {
